@@ -53,10 +53,10 @@ class ZooMain {
     // !!!!DISPLAY PEOPLE FUNCTIONS!!!!
     
     func showEmployees() {
-        print("\n----Employees----\n")
+        print("\n----Employees----")
         if listOfEmployees.count - 1 >= 0 {
             for each in 0...listOfEmployees.count - 1 {
-                print("Employee Name: \(listOfEmployees[each].name)\nID: \(listOfEmployees[each].tag)\n")
+                print("\nEmployee Name: \(listOfEmployees[each].name)\nID: \(listOfEmployees[each].tag)\n")
             }
             print("\n")
         } else {
@@ -65,10 +65,10 @@ class ZooMain {
     } // Shows all employees that have been added to the Zoo
     
     func showVisitors() {
-        print("\n----Visitors----\n")
+        print("\n----Visitors----")
         if listOfVisitors.count - 1 >= 0 {
             for each in 0...listOfVisitors.count - 1 {
-                print("Visitors Name: \(listOfVisitors[each].name)\n")
+                print("\nVisitors Name: \(listOfVisitors[each].name)\n")
             }
             print("\n")
         } else {
@@ -161,10 +161,10 @@ class ZooMain {
     // !!!!DISPLAY ANIMAL FUNCTIONS!!!!
     
     func showMammals() {
-        print("\n----Mammals----\n")
+        print("\n----Mammals----")
         if listOfMammals.count - 1 >= 0 {
             for each in 0...listOfMammals.count - 1 {
-                print("Mammal Name: \(listOfMammals[each].name)\nExhibit Name: \(listOfMammals[each].exhibit.rawValue)\nSpecies Name: \(listOfMammals[each].species)\nHas Fur: \(listOfMammals[each].hasFur)")
+                print("\nMammal Name: \(listOfMammals[each].name)\nExhibit Name: \(listOfMammals[each].exhibit.rawValue)\nSpecies Name: \(listOfMammals[each].species)\nHas Fur: \(listOfMammals[each].hasFur)")
             }
             print("\n")
         } else {
@@ -173,10 +173,10 @@ class ZooMain {
     } // List all mammals and their attributes
     
     func showAmphibians() {
-        print("\n----Amphibians----\n")
+        print("\n----Amphibians----")
         if listOfAmphibians.count - 1 >= 0 {
             for each in 0...listOfAmphibians.count - 1 {
-                print("Amphibian Name: \(listOfAmphibians[each].name)\nExhibit Name: \(listOfAmphibians[each].exhibit.rawValue)\nSpecies Name: \(listOfAmphibians[each].species)\nWeight: \(listOfAmphibians[each].weight) lbs")
+                print("\nAmphibian Name: \(listOfAmphibians[each].name)\nExhibit Name: \(listOfAmphibians[each].exhibit.rawValue)\nSpecies Name: \(listOfAmphibians[each].species)\nWeight: \(listOfAmphibians[each].weight) lbs")
             }
             print("\n")
         } else {
@@ -185,10 +185,10 @@ class ZooMain {
     } // List all amphibians and their attributes
     
     func showBirds() {
-        print("\n----Birds----\n")
+        print("\n----Birds----")
         if listOfBirds.count - 1 >= 0 {
             for each in 0...listOfBirds.count - 1 {
-                print("Bird Name: \(listOfBirds[each].name)\nExhibit Name: \(listOfBirds[each].exhibit.rawValue)\nSpecies Name: \(listOfBirds[each].species)\nCan fly: \(listOfBirds[each].flightless)")
+                print("\nBird Name: \(listOfBirds[each].name)\nExhibit Name: \(listOfBirds[each].exhibit.rawValue)\nSpecies Name: \(listOfBirds[each].species)\nCan fly: \(listOfBirds[each].flightless)")
             }
             print("\n")
         } else {
@@ -197,10 +197,10 @@ class ZooMain {
     } // List all birds and their attributes
     
     func showDinos() {
-        print("\n----Dinosaurs----\n")
+        print("\n----Dinosaurs----")
         if listOfDinosaurs.count - 1 >= 0 {
             for each in 0...listOfDinosaurs.count - 1 {
-                print("Dinosaur Name: \(listOfDinosaurs[each].name)\nExhibit Name: \(listOfDinosaurs[each].exhibit.rawValue)\nSpecies Name: \(listOfDinosaurs[each].species)\nA carnivore: \(listOfDinosaurs[each].carnivore)")
+                print("\nDinosaur Name: \(listOfDinosaurs[each].name)\nExhibit Name: \(listOfDinosaurs[each].exhibit.rawValue)\nSpecies Name: \(listOfDinosaurs[each].species)\nA carnivore: \(listOfDinosaurs[each].carnivore)")
             }
             print("\n")
         } else {
