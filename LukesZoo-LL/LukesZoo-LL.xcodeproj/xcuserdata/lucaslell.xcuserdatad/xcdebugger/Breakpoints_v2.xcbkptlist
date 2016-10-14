@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LukesZoo-LL/zooClass.swift"
-            timestampString = "498098762.980224"
+            timestampString = "498153754.839718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "newMammal()"
             landmarkType = "7">
          </BreakpointContent>

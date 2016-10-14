@@ -14,6 +14,7 @@ class ZooMain {
     var listOfMammals = [Mammal]()
     var listOfBirds = [Birds]()
     var listOfAmphibians = [Amphibian]()
+    var listOfDinosaurs = [Dinosaur]()
     let io = Io()
     
     // !!!!CREATING PEOPLE DOWN HERE!!!!
@@ -86,6 +87,8 @@ class ZooMain {
             newAmphibian()
         } else if typeOfAnimal == "BIRD" {
             newBird()
+        } else if typeOfAnimal == "DINOSAUR" {
+            newDino()
         } else {
             print("No such command! Try again.")
         }
@@ -137,6 +140,23 @@ class ZooMain {
         listOfBirds.append(newbird)
     }
     
+    func newDino() {
+        var carnivore = false
+        print("\nWhat's the name of the new Dinosaur?:")
+        let name = io.getInput()
+        print("\nWhat species is it derived from?:")
+        let species = io.getInput()
+        print("\nIs this new dino a carnivore? Type 'Y' or 'Yes' for yes! 'N' or 'No' for no!:")
+        let carnivoreOrNot = io.getInput().uppercased()
+        if carnivoreOrNot == "Y" || carnivoreOrNot == "YES" {
+            carnivore = true
+        }
+        
+        let newDino = Dinosaur(name, Animal.Exhibit.jurassicPark, species, carnivore)
+        listOfDinosaurs.append(newDino)
+    }
+
+    
     // !!!!DISPLAY ANIMAL FUNCTIONS!!!!
     
     func showMammals() {
@@ -174,6 +194,19 @@ class ZooMain {
             return
         }
     }
+    
+    func showDinos() {
+        print("\n----Dinosaurs----\n")
+        if listOfDinosaurs.count - 1 >= 0 {
+            for each in 0...listOfDinosaurs.count - 1 {
+                print("Dinosaur Name: \(listOfDinosaurs[each].name)\nExhibit Name: \(listOfDinosaurs[each].exhibit.rawValue)\nSpecies Name: \(listOfDinosaurs[each].species)\nA carnivore: \(listOfDinosaurs[each].carnivore)")
+            }
+            print("\n")
+        } else {
+            return
+        }
+    }
+
     
     // !!!!CREATING ANIMALS UP HERE!!!!
 }

@@ -26,6 +26,7 @@ class Animal {
         case mammalsRoam = "'Where The Mammals Roam'"
         case amphibianTank = "'Something Smells Fishy'"
         case teamEagle = "'Team Eagle Roost'"
+        case jurassicPark = "'Jurassic Park'"
     }
     
     init(_ name: String, _ exhibit: Exhibit, _ species: String) {
@@ -85,6 +86,16 @@ class Birds: Animal {
         super.init(name, exhibit, species)
     }
 }
+
+class Dinosaur: Animal {
+    var carnivore: Bool
+    
+    init(_ name: String, _ exhibit: Exhibit, _ species: String, _ carnivore: Bool) {
+        self.carnivore = carnivore
+        super.init(name, exhibit, species)
+    }
+}
+
 
 // Animal Children
 

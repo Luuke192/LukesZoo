@@ -22,7 +22,7 @@ class UserInteract {
                 exit(EXIT_SUCCESS)
             } else {
                 // Main Menu Screen
-                io.writeOutput("!!ALL COMMAND ENTRIES ARE FOLLOWED BY THE RETURN KEY!!\n")
+                io.writeOutput("\n!!ALL COMMAND ENTRIES ARE FOLLOWED BY THE RETURN KEY!!\n")
                 io.writeOutput("---- Luke's Zootopia! ----")
                 io.writeOutput("Type NA to add a new animal.")
                 io.writeOutput("Type NP to add a new person.")
@@ -31,6 +31,7 @@ class UserInteract {
                 io.writeOutput("Type SM to show all mammals.")
                 io.writeOutput("Type SA to show all amphibians.")
                 io.writeOutput("Type SB to show all birds.")
+                io.writeOutput("Type SD to show all dinosaurs.")
                 io.writeOutput("Type Q to quit.")
                 // Main Menu Functions
                 if currentInput == "NA" {
@@ -47,13 +48,15 @@ class UserInteract {
                     zooInfo.showAmphibians()
                 } else if currentInput == "SB" {
                     zooInfo.showBirds()
+                } else if currentInput == "SD" {
+                    zooInfo.showDinos()
                 }
             }
         }
     }
     //Check Animal Type
     func getAnimalType() -> String {
-        print("\nHmm...a new animal? What type of animal is it? Type 'M' for Mammal, 'A' for amphibian, or 'B' for bird!")
+        print("\nHmm...a new animal? What type of animal is it? Type 'M' for Mammal, 'A' for Amphibian, 'D' for Dinosaur, or 'B' for Bird!")
         currentInput = io.getInput().uppercased()
         
         if currentInput == "M" {
@@ -62,8 +65,10 @@ class UserInteract {
             return "AMPHIBIAN"
         } else if currentInput == "B" {
             return "BIRD"
+        } else if currentInput == "D" {
+            return "DINOSAUR"
         } else {
-            return "INVALID"
+            return "ERROR"
         }
     }
     //Check Person Type
