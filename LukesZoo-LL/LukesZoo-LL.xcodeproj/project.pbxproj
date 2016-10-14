@@ -11,7 +11,7 @@
 		E4C7D9751DB03EFE00B2BB64 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7D9741DB03EFE00B2BB64 /* io.swift */; };
 		E4C7D9771DB03F3700B2BB64 /* userInteract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7D9761DB03F3700B2BB64 /* userInteract.swift */; };
 		E4C7D9791DB0427000B2BB64 /* zooClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7D9781DB0427000B2BB64 /* zooClass.swift */; };
-		E4C7D97B1DB0430500B2BB64 /* personAnimalArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7D97A1DB0430500B2BB64 /* personAnimalArrays.swift */; };
+		E4C7D97B1DB0430500B2BB64 /* classTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7D97A1DB0430500B2BB64 /* classTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		E4C7D9741DB03EFE00B2BB64 /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
 		E4C7D9761DB03F3700B2BB64 /* userInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userInteract.swift; sourceTree = "<group>"; };
 		E4C7D9781DB0427000B2BB64 /* zooClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zooClass.swift; sourceTree = "<group>"; };
-		E4C7D97A1DB0430500B2BB64 /* personAnimalArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personAnimalArrays.swift; sourceTree = "<group>"; };
+		E4C7D97A1DB0430500B2BB64 /* classTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				E4C7D9741DB03EFE00B2BB64 /* io.swift */,
 				E4C7D9761DB03F3700B2BB64 /* userInteract.swift */,
 				E4C7D9781DB0427000B2BB64 /* zooClass.swift */,
-				E4C7D97A1DB0430500B2BB64 /* personAnimalArrays.swift */,
+				E4C7D97A1DB0430500B2BB64 /* classTypes.swift */,
 			);
 			path = "LukesZoo-LL";
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			files = (
 				E4C7D96E1DB03EC000B2BB64 /* main.swift in Sources */,
 				E4C7D9771DB03F3700B2BB64 /* userInteract.swift in Sources */,
-				E4C7D97B1DB0430500B2BB64 /* personAnimalArrays.swift in Sources */,
+				E4C7D97B1DB0430500B2BB64 /* classTypes.swift in Sources */,
 				E4C7D9751DB03EFE00B2BB64 /* io.swift in Sources */,
 				E4C7D9791DB0427000B2BB64 /* zooClass.swift in Sources */,
 			);
@@ -266,6 +266,7 @@
 				E4C7D9731DB03EC000B2BB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

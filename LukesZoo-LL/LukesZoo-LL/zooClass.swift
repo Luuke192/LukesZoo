@@ -9,6 +9,7 @@
 import Foundation
 
 class ZooMain {
+    // Get all classes from other file for info
     var listOfEmployees = [Employee]()
     var listOfVisitors = [Visitor]()
     var listOfMammals = [Mammal]()
@@ -27,7 +28,7 @@ class ZooMain {
         } else {
             print("No such command! Try again.")
         }
-    }
+    } // Sets type of person and prepare the correct function
     
     func newEmployee() {
         print("\nWhat's the name of the new employee?: ")
@@ -40,14 +41,14 @@ class ZooMain {
         } else {
             print("\nTry again and please use a number this time!")
         }
-    }
+    } // Get data for new employee details
     
     func newVisitor() {
         print("\nWhat's the name of the new visitor?: ")
         let name = io.getInput()
         let newPerson = Visitor(name)
         listOfVisitors.append(newPerson)
-    }
+    } // Get name for the new visitor
     
     // !!!!DISPLAY PEOPLE FUNCTIONS!!!!
     
@@ -61,7 +62,7 @@ class ZooMain {
         } else {
             return
         }
-    }
+    } // Shows all employees that have been added to the Zoo
     
     func showVisitors() {
         print("\n----Visitors----\n")
@@ -73,7 +74,7 @@ class ZooMain {
         } else {
             return
         }
-    }
+    } // Shows all visitors who have come to the Zoo
     
     // !!!!CREATING PEOPLE UP HERE!!!!
     
@@ -92,7 +93,7 @@ class ZooMain {
         } else {
             print("No such command! Try again.")
         }
-    }
+    } // Set type of animal from user input and call the correct function
     
     func newMammal() {
         var hasFur = false
@@ -108,7 +109,7 @@ class ZooMain {
         
         let newMammal = Mammal(name, Animal.Exhibit.mammalsRoam, species, hasFur)
         listOfMammals.append(newMammal)
-    }
+    } // Get data for a new mammal's details
     
     func newAmphibian() {
         print("\nWhat's the name of this new amphibian?:")
@@ -122,23 +123,23 @@ class ZooMain {
         } else {
             print("Try using a number value this time!")
         }
-    }
+    } // Get data for a new amphibian's details
     
     func newBird() {
-        var migrating = false
+        var flightless = false
         print("\nWhat's the name of this new bird?:")
         let name = io.getInput()
         print("\nWhat species is it derived from?:")
         let species = io.getInput()
-        print("Does the new bird have a migration pattern? Type 'Y' or 'Yes' for yes! 'N' or 'No' for no!:")
-        let migrateOrNot = io.getInput().uppercased()
-        if migrateOrNot == "Y" || migrateOrNot == "YES" {
-            migrating = true
+        print("\nCan the new bird fly or not? Type 'Y' or 'Yes' for yes! 'N' or 'No' for no!:")
+        let flightlessOrNot = io.getInput().uppercased()
+        if flightlessOrNot == "Y" || flightlessOrNot == "YES" {
+            flightless = true
         }
         
-        let newbird = Birds(name, Animal.Exhibit.teamEagle, species, migrating)
+        let newbird = Birds(name, Animal.Exhibit.teamEagle, species, flightless)
         listOfBirds.append(newbird)
-    }
+    } // Get data for a new bird's details
     
     func newDino() {
         var carnivore = false
@@ -154,7 +155,7 @@ class ZooMain {
         
         let newDino = Dinosaur(name, Animal.Exhibit.jurassicPark, species, carnivore)
         listOfDinosaurs.append(newDino)
-    }
+    } // Get data for a new dino's details
 
     
     // !!!!DISPLAY ANIMAL FUNCTIONS!!!!
@@ -169,7 +170,7 @@ class ZooMain {
         } else {
             return
         }
-    }
+    } // List all mammals and their attributes
     
     func showAmphibians() {
         print("\n----Amphibians----\n")
@@ -181,19 +182,19 @@ class ZooMain {
         } else {
             return
         }
-    }
+    } // List all amphibians and their attributes
     
     func showBirds() {
         print("\n----Birds----\n")
         if listOfBirds.count - 1 >= 0 {
             for each in 0...listOfBirds.count - 1 {
-                print("Bird Name: \(listOfBirds[each].name)\nExhibit Name: \(listOfBirds[each].exhibit.rawValue)\nSpecies Name: \(listOfBirds[each].species)\nHas a Migrating Pattern: \(listOfBirds[each].migrating)")
+                print("Bird Name: \(listOfBirds[each].name)\nExhibit Name: \(listOfBirds[each].exhibit.rawValue)\nSpecies Name: \(listOfBirds[each].species)\nCan fly: \(listOfBirds[each].flightless)")
             }
             print("\n")
         } else {
             return
         }
-    }
+    } // List all birds and their attributes
     
     func showDinos() {
         print("\n----Dinosaurs----\n")
@@ -205,7 +206,7 @@ class ZooMain {
         } else {
             return
         }
-    }
+    } // List all dinos and their attributes
 
     
     // !!!!CREATING ANIMALS UP HERE!!!!

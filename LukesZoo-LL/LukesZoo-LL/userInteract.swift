@@ -54,7 +54,7 @@ class UserInteract {
             }
         }
     }
-    //Check Animal Type
+    //Get Animal Type from user
     func getAnimalType() -> String {
         print("\nHmm...a new animal? What type of animal is it? Type 'M' for Mammal, 'A' for Amphibian, 'D' for Dinosaur, or 'B' for Bird!")
         currentInput = io.getInput().uppercased()
@@ -71,7 +71,7 @@ class UserInteract {
             return "ERROR"
         }
     }
-    //Check Person Type
+    //Get Person Type from user
     func getPersonType() -> String {
         print("\nOh someone new! Is he/she going to be an employee? Type 'Y' or 'Yes' for yes. 'N' or 'No' for no!")
         currentInput = io.getInput().uppercased()
